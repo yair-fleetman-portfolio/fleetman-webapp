@@ -34,8 +34,13 @@ http {
         proxy_set_header Connection $connection_upgrade;
       }
 
+      location /fleetman {
+         root /usr/share/nginx/html;
+      }
+
       location / {
          root /usr/share/nginx/html;
       }
+
     }
 }
