@@ -12,7 +12,7 @@ RUN apk add --update bash && rm -rf /var/cache/apk/*
 RUN rm -rf /usr/share/nginx/html/*
 
 COPY /dist /usr/share/nginx/html 
-# COPY /dist /usr/share/nginx/html/fleetman
+COPY /dist /usr/share/nginx/html/fleetman
 
 COPY nginx.conf.j2 /templates/
 
