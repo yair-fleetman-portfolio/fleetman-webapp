@@ -35,7 +35,9 @@ http {
       }
 
       location /fleetman {
-         return "hello";
+         add_header Content-Type text/html;
+
+         return 404 '<html><body>Hello World</body></html>';
          # root /usr/share/nginx/html;
       }
 
