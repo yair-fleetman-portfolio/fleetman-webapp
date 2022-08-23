@@ -10,15 +10,6 @@ pipeline {
 
    stages {
 
-      stage('Build') {
-         steps {
-            echo '====================================='
-            echo 'BUILD'
-            echo '====================================='
-            sh 'mvn clean package'
-         }
-      }
-
       stage('Build and Push Image') {
          steps {
             script {
