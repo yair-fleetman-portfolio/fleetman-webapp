@@ -34,16 +34,17 @@ http {
         proxy_set_header Connection $connection_upgrade;
       }
 
-      location /fleetman {
-         #add_header Content-Type text/html;
+      root /usr/share/nginx/html;
 
-         #return 404 '<html><body>Hello World</body></html>';
-         root /usr/share/nginx/html;
-      }
-
-      location / {
-         root /usr/share/nginx/html;
-      }
+#      location /fleetman {
+#         #add_header Content-Type text/html;
+#
+#         #return 404 '<html><body>Hello World</body></html>';
+#      }
+#
+#      location / {
+#         root /usr/share/nginx/html;
+#      }
 
     }
 }
