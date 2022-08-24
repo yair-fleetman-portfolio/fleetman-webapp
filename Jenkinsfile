@@ -9,7 +9,6 @@ pipeline {
    }
 
    stages {
-
       stage('Build Image') {
          when { expression { env.GIT_BRANCH == 'master' } }
          steps {
