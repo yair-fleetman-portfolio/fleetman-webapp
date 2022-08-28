@@ -31,7 +31,9 @@ http {
 
         # WebSocket proxying - from http://nginx.org/en/docs/http/websocket.html
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection $connection_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header host $host;
+        proxy_set_header x-real-ip $remote_addr;
       }
 
       location / {
