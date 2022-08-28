@@ -120,7 +120,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var stompConfig = {
-    url: "ws://" + window.location.hostname + ":" + window.location.port + "/api/updates",
+    url: "wss://" + window.location.hostname + ":" + window.location.port + "/api/updates",
     // TODO will reinstate when dev complete.
     headers: {},
     heartbeat_in: 0,
