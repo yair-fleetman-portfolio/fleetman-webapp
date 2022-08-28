@@ -412,7 +412,7 @@ var VehicleService = /** @class */ (function () {
         }
         else {
             // call API gateway, get the history for this vehicle.
-            this.http.get("http://" + window.location.hostname + ":" + window.location.port + "/api/history/" + centerVehicle.name)
+            this.http.get("https://" + window.location.hostname + ":" + window.location.port + "/api/history/" + centerVehicle.name)
                 .subscribe(function (data) { return _this.centerVehicleHistory.next(data); });
         }
     };
